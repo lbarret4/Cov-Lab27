@@ -1,0 +1,27 @@
+[
+    {
+        "time": "Mon Aug 27 2018 07:00:00 GMT-0400 (Eastern Daylight Time)",
+        "user": "Charles",
+        "content": "I ate the best pizza I ever had!"
+    },
+    {
+        "time": "Tue Aug 28 2018 04:00:00 GMT-0400 (Eastern Daylight Time)",
+        "user": "Jemma",
+        "content": "Who send greeting cards anymore?"
+    },
+    {
+        "time": "Sat Aug 25 2018 17:00:00 GMT-0400 (Eastern Daylight Time)",
+        "user": "Kim",
+        "content": "I am going to be the card dealer tonight! "
+    },
+    {
+        "time": "Wed Aug 29 2018 03:30:00 GMT-0400 (Eastern Daylight Time)",
+        "user": "Amanda",
+        "content": "Music: Radio, CDS, MP3s, Streaming"
+    },
+    {
+        "time": "Thu Aug 23 2018 18:15:00 GMT-0400 (Eastern Daylight Time)",
+        "user": "Kenji",
+        "content": "I left my hair brush at home."
+    }
+]
