@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/lbarret4/Cov-Lab27/issues"
   },
-  "homepage": "https://github.com/lbarret4/Cov-Lab27#readme"
+  "homepage": "https://github.com/lbarret4/Cov-Lab27#readme",
+  "dependencies": {
+    "request-promise": "^4.2.2"
+  }
 }
