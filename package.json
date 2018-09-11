@@ -1,0 +1,19 @@
+{
+  "name": "cov-lab27",
+  "version": "1.0.0",
+  "description": "1. Create a NodeJS project using `npm init`.\r 2. Create a folder in your project called server.\r 3. Create a JavaScript file in the server folder named `server.js`.\r 4. In `server.js` \r     -  Import (require) `path` and `fs`.\r     - Create an array consisting of at least 5 chirp objects.\r     - Write the array to a file in the root of the project called `chirps.json`.\r 5. Add code to `server.js` that reads the file and outputs the chirps to the console\r ### PART 2\r 1. Install `request-promise` from npm and save it to your package.json file.\r 2. Create a JavaScript file in the root of your project called `reddit.js`.\r 3. Use `request-promise` to retreive articles from https://reddit.com/r/popular.json.\r 4. Extract from each article title, url, and author\r     - Push each extracted article to an array.\r     - Write the array to a file in the root of your project called `popular-articles.json`.\r ### ADVANCED\r 1. Create a JavaScript file named `popular-downloader.js`.\r 2. Create a directory in the root of your project named `downloads`.\r 3. Using `request-promise`, pull articles from https://reddit.com/r/popular.json.\r 4. If the article is a video, image, or gif:\r     - Use `request-promise` to download the media.\r     - Write each download to a file (named the id of the article) in the `downloads` directory.",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lbarret4/Cov-Lab27.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lbarret4/Cov-Lab27/issues"
+  },
+  "homepage": "https://github.com/lbarret4/Cov-Lab27#readme"
+}
