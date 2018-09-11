@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/lbarret4/Cov-Lab27#readme",
   "dependencies": {
+    "request": "^2.88.0",
     "request-promise": "^4.2.2"
   }
 }
