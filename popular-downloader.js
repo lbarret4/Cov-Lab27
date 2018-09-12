@@ -5,6 +5,9 @@ const filetype = ['video', 'image'];
 
 let optionsMedia = {
     uri: '',
+    headers: {
+        'Content-Type':''
+    },
     encoding: null
 
 };
@@ -33,6 +36,7 @@ const optionsJSON = {
                     let fileExt = '.mp4';
                     let fileName = `file${index + fileExt}`
                     optionsMedia.uri = fileUrl + fileExt;
+                    optionsMedia.headers["Content-Type"]=`video/${fileExt.slice(1)}`;
                     data.push({
                         type: filetype[0],
                         fileUrl,
@@ -52,9 +56,10 @@ const optionsJSON = {
                 } else if (item.post_hint.includes(filetype[1])) {
 
                     let fileUrl = item.url;
-                    let fileExt = fileUrl.split('.').slice(-1);
+                    let fileExt = '.'+fileUrl.split('.').slice(-1);
                     let fileName = `file${index + fileExt}`
                     optionsMedia.uri = fileUrl;
+                    optionsMedia.headers["Content-Type"]=`image/${fileExt.slice(1)}`;
                     data.push({
                         type: filetype[1],
                         fileUrl,
@@ -75,16 +80,12 @@ const optionsJSON = {
             if (err) throw err;
         });
 
-        // let body = await rp(optionsMedia);
-        //         fs.writeFile(dataPath, body, { encoding: 'binary' }, (err) => {
-        //             if (err) throw err;
-        //             console.log('wrote all data to file');
-        //         });
+        let body = await rp(data[0].options);
+                fs.writeFile(data[0].downloadPath, body, { encoding: 'binary' }, (err) => {
+                    if (err) throw err;
+                    console.log('wrote all data to file');
+                });
 
-        // const dataPath = path.join(__dirname, 'popular-articles.json');
-        // fs.writeFile(dataPath, JSON.stringify(data), (err) => {
-        //     if (err) throw err;
-        // });
 
 
 
